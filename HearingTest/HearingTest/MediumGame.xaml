@@ -21,8 +21,9 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="Iteracja" FontSize="50" TextColor="White" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-
+        <Label x:Name="Points" FontSize="50" TextColor="White" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Label x:Name="Iteracja" FontSize="30" TextColor="White" Grid.Column="5" Grid.ColumnSpan="2" Grid.Row="0" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
+        
         <Button x:Name="TestButton" VerticalOptions="Start" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="Black" Text="Click to hear the sound" Grid.Column="1" Grid.ColumnSpan="5" FontAttributes="Bold" TextTransform="None" Grid.Row="1"  FontSize="40" Clicked="TestButton_Clicked" CornerRadius="30"/>
         <Button  x:Name="Button1" Grid.Column="0" Grid.Row="2" FontAttributes="Bold"  FontSize="40" Clicked="Button1_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "C" BorderWidth = "4"/>
         <Button x:Name="Button2" Grid.Column="1" Grid.Row="2" FontAttributes="Bold"  FontSize="40" Clicked="Button2_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "D" BorderWidth = "4"/>

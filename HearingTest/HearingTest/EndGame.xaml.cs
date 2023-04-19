@@ -15,9 +15,27 @@ namespace HearingTest
         public EndGame()
         {
             InitializeComponent();
+            switch (MainPage.level)
+            {
+                case 1:
+                    Score.Text = "Your Score is " + EasyGame.points.ToString() + "/10";
+                    EasyGame.points = 0;
+                    break;
+                case 2:
+                    Score.Text = "Your Score is " + MediumGame.points.ToString() + "/10";
+                    MediumGame.points = 0;
+                    break;
+                case 3:
+                    Score.Text = "Your Score is " + HardGame.points.ToString() + "/10";
+                    HardGame.points = 0;
+                    break;
+                case 4:
+                    Score.Text = "Your Score is " + ExpertGame.points.ToString() + "/10";
+                    ExpertGame.points = 0;
+                    break;
+            }
             if (EasyGame.points > 0)
             {
-                Score.Text = "Your Score is " + EasyGame.points.ToString() + "/10";
 
             }
         }

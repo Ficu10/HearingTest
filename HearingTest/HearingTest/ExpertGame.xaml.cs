@@ -22,7 +22,8 @@ namespace HearingTest
         public ExpertGame()
         {
             InitializeComponent();
-            Iteracja.Text = i.ToString() + "/10";
+            Points.Text = points.ToString() + "/10";
+            Iteracja.Text = i.ToString();
         }
 
         private void Button1_Clicked(object sender, EventArgs e)
@@ -147,14 +148,15 @@ namespace HearingTest
             if (i == 10)
             {
                 i = 0;
-                await Navigation.PushAsync(new MainPage());
+                await Navigation.PushAsync(new EndGame());
             }
             i++;
-            Iteracja.Text = i.ToString() + "/10";
+            Points.Text = points.ToString() + "/10";
+            Iteracja.Text = i.ToString();
 
             Random r = new Random();
-            selectMusic = r.Next(1, 7);
-
+            selectMusic = r.Next(1, 8);
+            usersSelect = 0;
         }
     }
 }

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HearingTest.EndGame"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="DeepSkyBlue"
+             BackgroundColor="Gold"
              Padding="5">
     <Grid>
         <Grid.RowDefinitions>
@@ -15,13 +15,11 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="Score" FontSize="50" TextColor="White" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Label x:Name="Score" FontSize="50" TextColor="White" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
 
-        <Button BorderColor = "White" BorderWidth = "5" x:Name="Menu" Text="Menu" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" FontSize="Large" Clicked="Menu_Clicked" CornerRadius="30" BackgroundColor="DimGray" Margin = "5"/>
-        <Button BorderColor = "White" BorderWidth = "5" x:Name="OnceAgain" Text="Again" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" FontSize="Large" Clicked="OnceAgain_Clicked" CornerRadius="30" BackgroundColor="DimGray" Margin = "5"/>
+        <Button BorderColor = "White" BorderWidth = "5" x:Name="Menu" Text="Menu" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" FontSize="Large" Clicked="Menu_Clicked" CornerRadius="30" BackgroundColor="DarkViolet" Margin = "5"/>
+        <Button BorderColor = "White" BorderWidth = "5" x:Name="OnceAgain" Text="Again" FontAttributes="Bold" Grid.Column="1" Grid.Row="2" FontSize="Large" Clicked="OnceAgain_Clicked" CornerRadius="30" BackgroundColor="DeepSkyBlue" Margin = "5"/>
 
 
 

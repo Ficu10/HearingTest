@@ -16,13 +16,7 @@ namespace HearingTest
             InitializeComponent();
         }
 
-        private async void StartButton_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Game());
-            Game.points = 0;
-            Score.IsVisible = true;
-        }
-
+      
         private async void EasyButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new EasyGame());
