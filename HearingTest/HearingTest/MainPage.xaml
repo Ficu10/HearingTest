@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HearingTest.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="DarkViolet">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button BorderColor = "White" BorderWidth = "5" x:Name="EasyButton" Text="Easy" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" FontSize="Large" Clicked="EasyButton_Clicked" CornerRadius="30" BackgroundColor="Yellow" Margin = "5"/>
+        <Button BorderColor = "White" BorderWidth = "5" x:Name="MediumButton" Text="Medium" FontAttributes="Bold" Grid.Column="1" Grid.Row="1" FontSize="Large" Clicked="MediumButton_Clicked" CornerRadius="30" BackgroundColor="Yellow" Margin = "5"/>
+        <Button BorderColor = "White" BorderWidth = "5" x:Name="HardButton" Text="Hard" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" FontSize="Large" Clicked="HardButton_Clicked" CornerRadius="30" BackgroundColor="Yellow" Margin = "5"/>
+        <Button BorderColor = "White" BorderWidth = "5" x:Name="ExpertButton" Text="Expert" FontAttributes="Bold" Grid.Column="1" Grid.Row="2"  FontSize="Large" Clicked="ExpertButton_Clicked" CornerRadius="30" BackgroundColor="Yellow" Margin = "5"/>
+        <Label x:Name="Score" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" VerticalTextAlignment="Center" Grid.Column="0" Grid.Row="0" IsVisible="true" TextColor="White" />
+    </Grid>
+
+</ContentPage>

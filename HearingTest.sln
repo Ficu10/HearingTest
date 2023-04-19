@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HearingTest.Android", "HearingTest\HearingTest.Android\HearingTest.Android.csproj", "{F9436C2A-E5BB-4318-A6E8-B5F03FFA90EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HearingTest", "HearingTest\HearingTest\HearingTest.csproj", "{B025725B-0A66-4448-BEBD-85DA2E4DCFC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9436C2A-E5BB-4318-A6E8-B5F03FFA90EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9436C2A-E5BB-4318-A6E8-B5F03FFA90EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9436C2A-E5BB-4318-A6E8-B5F03FFA90EE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F9436C2A-E5BB-4318-A6E8-B5F03FFA90EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9436C2A-E5BB-4318-A6E8-B5F03FFA90EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9436C2A-E5BB-4318-A6E8-B5F03FFA90EE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B025725B-0A66-4448-BEBD-85DA2E4DCFC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B025725B-0A66-4448-BEBD-85DA2E4DCFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B025725B-0A66-4448-BEBD-85DA2E4DCFC1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B025725B-0A66-4448-BEBD-85DA2E4DCFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B025725B-0A66-4448-BEBD-85DA2E4DCFC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B025725B-0A66-4448-BEBD-85DA2E4DCFC1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8C15542-4AE9-4DAA-A156-8D027038D104}
+	EndGlobalSection
+EndGlobal
