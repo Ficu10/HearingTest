@@ -85,7 +85,7 @@ namespace HearingTest
             AllBackGroundsWhite();
             Button6.BackgroundColor = Color.Green;
             usersSelect = 6;
-            Stream fileName = GetStreamFromFile("a4.mp3");
+            Stream fileName = GetStreamFromFile("a5.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
             audio.Load(fileName);
             audio.Play();
@@ -96,7 +96,7 @@ namespace HearingTest
             AllBackGroundsWhite();
             Button7.BackgroundColor = Color.Green;
             usersSelect = 7;
-            Stream fileName = GetStreamFromFile("b4.mp3");
+            Stream fileName = GetStreamFromFile("b5.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
             audio.Load(fileName);
             audio.Play();
@@ -141,10 +141,10 @@ namespace HearingTest
                     fileName = GetStreamFromFile("g4.mp3");
                     break;
                 case 6:
-                    fileName = GetStreamFromFile("a4.mp3");
+                    fileName = GetStreamFromFile("a5.mp3");
                     break;
                 case 7:
-                    fileName = GetStreamFromFile("b4.mp3");
+                    fileName = GetStreamFromFile("b5.mp3");
                     break;
             }
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
