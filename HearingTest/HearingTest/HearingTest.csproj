@@ -11,6 +11,56 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="a3.mp3" />
+    <None Remove="a4.mp3" />
+    <None Remove="a5.mp3" />
+    <None Remove="b3.mp3" />
+    <None Remove="b4.mp3" />
+    <None Remove="b5.mp3" />
+    <None Remove="c3.mp3" />
+    <None Remove="c4.mp3" />
+    <None Remove="c5.mp3" />
+    <None Remove="c6.mp3" />
+    <None Remove="d3.mp3" />
+    <None Remove="d4.mp3" />
+    <None Remove="d5.mp3" />
+    <None Remove="e3.mp3" />
+    <None Remove="e4.mp3" />
+    <None Remove="e5.mp3" />
+    <None Remove="f3.mp3" />
+    <None Remove="f4.mp3" />
+    <None Remove="f5.mp3" />
+    <None Remove="g3.mp3" />
+    <None Remove="g4.mp3" />
+    <None Remove="g5.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="a3.mp3" />
+    <EmbeddedResource Include="a4.mp3" />
+    <EmbeddedResource Include="a5.mp3" />
+    <EmbeddedResource Include="b3.mp3" />
+    <EmbeddedResource Include="b4.mp3" />
+    <EmbeddedResource Include="b5.mp3" />
+    <EmbeddedResource Include="c3.mp3" />
+    <EmbeddedResource Include="c4.mp3" />
+    <EmbeddedResource Include="c5.mp3" />
+    <EmbeddedResource Include="c6.mp3" />
+    <EmbeddedResource Include="d3.mp3" />
+    <EmbeddedResource Include="d4.mp3" />
+    <EmbeddedResource Include="d5.mp3" />
+    <EmbeddedResource Include="e3.mp3" />
+    <EmbeddedResource Include="e4.mp3" />
+    <EmbeddedResource Include="e5.mp3" />
+    <EmbeddedResource Include="f3.mp3" />
+    <EmbeddedResource Include="f4.mp3" />
+    <EmbeddedResource Include="f5.mp3" />
+    <EmbeddedResource Include="g3.mp3" />
+    <EmbeddedResource Include="g4.mp3" />
+    <EmbeddedResource Include="g5.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.6.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />

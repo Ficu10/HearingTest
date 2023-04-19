@@ -22,13 +22,13 @@ namespace HearingTest
         public EasyGame()
         {
             InitializeComponent();
-            Iteracja.Text = i.ToString();
+            Iteracja.Text = i.ToString() + "/10";
         }
 
         private void Button1_Clicked(object sender, EventArgs e)
         {
-            AllBordersOff();
-            Button1.BorderWidth = 3;
+            AllBackGroundsWhite();
+            Button1.BackgroundColor = Color.Green;
             usersSelect = 1;
             Stream fileName = GetStreamFromFile("c4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -38,8 +38,8 @@ namespace HearingTest
 
         private void Button2_Clicked(object sender, EventArgs e)
         {
-            AllBordersOff();
-            Button2.BorderWidth = 3;
+            AllBackGroundsWhite();
+            Button2.BackgroundColor = Color.Green;
             usersSelect = 2;
             Stream fileName = GetStreamFromFile("d4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -49,8 +49,8 @@ namespace HearingTest
 
         private void Button3_Clicked(object sender, EventArgs e)
         {
-            AllBordersOff();
-            Button3.BorderWidth = 3;
+            AllBackGroundsWhite();
+            Button3.BackgroundColor = Color.Green;
             usersSelect = 3;
             Stream fileName = GetStreamFromFile("e4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -60,8 +60,8 @@ namespace HearingTest
 
         private void Button4_Clicked(object sender, EventArgs e)
         {
-            AllBordersOff();
-            Button4.BorderWidth = 3;
+            AllBackGroundsWhite();
+            Button4.BackgroundColor = Color.Green;
             usersSelect = 4;
             Stream fileName = GetStreamFromFile("f4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -71,8 +71,8 @@ namespace HearingTest
 
         private void Button5_Clicked(object sender, EventArgs e)
         {
-            AllBordersOff();
-            Button5.BorderWidth = 3;
+            AllBackGroundsWhite();
+            Button5.BackgroundColor = Color.Green;
             usersSelect = 5;
             Stream fileName = GetStreamFromFile("g4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -82,8 +82,8 @@ namespace HearingTest
 
         private void Button6_Clicked(object sender, EventArgs e)
         {
-            AllBordersOff();
-            Button6.BorderWidth = 3;
+            AllBackGroundsWhite();
+            Button6.BackgroundColor = Color.Green;
             usersSelect = 6;
             Stream fileName = GetStreamFromFile("a4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -93,23 +93,23 @@ namespace HearingTest
 
         private void Button7_Clicked(object sender, EventArgs e)
         {
-            AllBordersOff();
-            Button7.BorderWidth = 3;
+            AllBackGroundsWhite();
+            Button7.BackgroundColor = Color.Green;
             usersSelect = 7;
             Stream fileName = GetStreamFromFile("b4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
             audio.Load(fileName);
             audio.Play();
         }
-        private void AllBordersOff()
+        private void AllBackGroundsWhite()
         {
-            Button1.BorderWidth = 0;
-            Button2.BorderWidth = 0;
-            Button3.BorderWidth = 0;
-            Button4.BorderWidth = 0;
-            Button5.BorderWidth = 0;
-            Button6.BorderWidth = 0;
-            Button7.BorderWidth = 0;
+            Button1.BackgroundColor = Color.White;
+            Button2.BackgroundColor = Color.White;
+            Button3.BackgroundColor = Color.White;
+            Button4.BackgroundColor = Color.White;
+            Button5.BackgroundColor = Color.White;
+            Button6.BackgroundColor = Color.White;
+            Button7.BackgroundColor = Color.White;
         }
 
         Stream GetStreamFromFile(string filename)
@@ -155,7 +155,7 @@ namespace HearingTest
         private async void Next_Clicked(object sender, EventArgs e)
         {
 
-            AllBordersOff();
+            AllBackGroundsWhite();
             if (selectMusic == usersSelect)
             {
                 points++;

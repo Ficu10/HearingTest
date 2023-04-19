@@ -13,9 +13,9 @@ namespace HearingTest
         public MainPage()
         {
             InitializeComponent();
-            if (Game.points > 0)
+            if (EasyGame.points > 0)
             {
-                Score.Text = "Your Score is " + Game.points.ToString() + "/10";
+                Score.Text = "Your Score is " + EasyGame.points.ToString() + "/10";
 
             }
         }
