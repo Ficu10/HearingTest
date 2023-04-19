@@ -10,14 +10,10 @@ namespace HearingTest
 {
     public partial class MainPage : ContentPage
     {
+        public static int level;
         public MainPage()
         {
             InitializeComponent();
-            if (EasyGame.points > 0)
-            {
-                Score.Text = "Your Score is " + EasyGame.points.ToString() + "/10";
-
-            }
         }
 
         private async void StartButton_Clicked(object sender, EventArgs e)
@@ -30,24 +26,27 @@ namespace HearingTest
         private async void EasyButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new EasyGame());
-
+            level = 1;
         }
 
         private async void MediumButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MediumGame());
+            level = 2;
 
         }
 
         private async void HardButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new HardGame());
+            level = 3;
 
         }
 
         private async void ExpertButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ExpertGame());
+            level = 4;
 
         }
     }

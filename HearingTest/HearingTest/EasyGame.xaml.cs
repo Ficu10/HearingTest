@@ -160,13 +160,17 @@ namespace HearingTest
             {
                 points++;
             }
+            else
+            {
+
+            }
             if (i == 10)
             {
                 i = 0;
                 await Navigation.PushAsync(new MainPage());
             }
             i++;
-            Iteracja.Text = i.ToString();
+            Iteracja.Text = i.ToString() + "/10";
 
             Random r = new Random();
             selectMusic = r.Next(1, 7);
