@@ -33,6 +33,9 @@
     <None Remove="g3.mp3" />
     <None Remove="g4.mp3" />
     <None Remove="g5.mp3" />
+    <None Remove="goodImage.png" />
+    <None Remove="questionImage.png" />
+    <None Remove="wrongImage.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -58,6 +61,9 @@
     <EmbeddedResource Include="g3.mp3" />
     <EmbeddedResource Include="g4.mp3" />
     <EmbeddedResource Include="g5.mp3" />
+    <EmbeddedResource Include="goodImage.png" />
+    <EmbeddedResource Include="questionImage.png" />
+    <EmbeddedResource Include="wrongImage.png" />
   </ItemGroup>
 
   <ItemGroup>

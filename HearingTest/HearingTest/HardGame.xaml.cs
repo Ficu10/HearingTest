@@ -24,7 +24,6 @@ namespace HearingTest
         public HardGame()
         {
             InitializeComponent();
-            Points.Text = points.ToString() + "/10";
             Iteracja.Text = i.ToString();
         }
 
@@ -173,18 +172,83 @@ namespace HearingTest
             if (testList[0] == usersList[0] && testList[1] == usersList[1] && testList[2] == usersList[2])
             {
                 points++;
+                switch (i)
+                {
+                    case 1:
+                        Answear1.Source = "goodImage.png";
+                        break;
+                    case 2:
+                        Answear2.Source = "goodImage.png";
+                        break;
+                    case 3:
+                        Answear3.Source = "goodImage.png";
+                        break;
+                    case 4:
+                        Answear4.Source = "goodImage.png";
+                        break;
+                    case 5:
+                        Answear5.Source = "goodImage.png";
+                        break;
+                    case 6:
+                        Answear6.Source = "goodImage.png";
+                        break;
+                    case 7:
+                        Answear7.Source = "goodImage.png";
+                        break;
+                    case 8:
+                        Answear8.Source = "goodImage.png";
+                        break;
+                    case 9:
+                        Answear9.Source = "goodImage.png";
+                        break;
+                    case 10:
+                        Answear10.Source = "goodImage.png";
+                        break;
+                }
             }
             else
             {
-
+                switch (i)
+                {
+                    case 1:
+                        Answear1.Source = "wrongImage.png";
+                        break;
+                    case 2:
+                        Answear2.Source = "wrongImage.png";
+                        break;
+                    case 3:
+                        Answear3.Source = "wrongImage.png";
+                        break;
+                    case 4:
+                        Answear4.Source = "wrongImage.png";
+                        break;
+                    case 5:
+                        Answear5.Source = "wrongImage.png";
+                        break;
+                    case 6:
+                        Answear6.Source = "wrongImage.png";
+                        break;
+                    case 7:
+                        Answear7.Source = "wrongImage.png";
+                        break;
+                    case 8:
+                        Answear8.Source = "wrongImage.png";
+                        break;
+                    case 9:
+                        Answear9.Source = "wrongImage.png";
+                        break;
+                    case 10:
+                        Answear10.Source = "wrongImage.png";
+                        break;
+                }
             }
+          
             if (i == 10)
             {
                 i = 0;
                 await Navigation.PushAsync(new EndGame());
             }
             i++;
-            Points.Text = points.ToString() + "/10";
             Iteracja.Text = i.ToString();
             for (int i = 0; i < 3; i++)
             {

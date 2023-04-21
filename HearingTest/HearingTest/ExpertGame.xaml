@@ -21,7 +21,16 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="Points" FontSize="50" TextColor="White" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <ImageButton x:Name="Answear1"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="1" Grid.Row="0" />
+        <ImageButton x:Name="Answear2"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="2" Grid.Row="0" />
+        <ImageButton x:Name="Answear3"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="3" Grid.Row="0" />
+        <ImageButton x:Name="Answear4"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="4" Grid.Row="0" />
+        <ImageButton x:Name="Answear5"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="5" Grid.Row="0" />
+        <ImageButton x:Name="Answear6"  BackgroundColor="Transparent" Source="questionImage.png"  VerticalOptions="End"  Grid.Column="1" Grid.Row="0" />
+        <ImageButton x:Name="Answear7"  BackgroundColor="Transparent" Source="questionImage.png"   VerticalOptions="End" Grid.Column="2" Grid.Row="0" />
+        <ImageButton x:Name="Answear8"  BackgroundColor="Transparent" Source="questionImage.png" VerticalOptions="End"  Grid.Column="3" Grid.Row="0" />
+        <ImageButton x:Name="Answear9"  BackgroundColor="Transparent" Source="questionImage.png" VerticalOptions="End" Grid.Column="4" Grid.Row="0" />
+        <ImageButton x:Name="Answear10" BackgroundColor="Transparent" Source="questionImage.png" VerticalOptions="End" Grid.Column="5" Grid.Row="0" />
         <Label x:Name="Iteracja" FontSize="30" TextColor="White" Grid.Column="5" Grid.ColumnSpan="2" Grid.Row="0" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
 
         <Button x:Name="TestButton" VerticalOptions="Start" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="Black" Text="Click to hear the sound" Grid.Column="1" Grid.ColumnSpan="5" FontAttributes="Bold" TextTransform="None" Grid.Row="1"  FontSize="40" Clicked="TestButton_Clicked" CornerRadius="30"/>
