@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HearingTest.MenuIntervals"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="DarkViolet"
+             Padding="0">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+       
+        <Button  BorderColor = "White" BorderWidth = "5" x:Name="Exerscises" Text="Hard" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" FontSize="Large" Clicked="Exerscises_Clicked" CornerRadius="30" BackgroundColor="DimGray" Margin = "5"/>
+        <Button  BorderColor = "White" BorderWidth = "5" x:Name="Test" Text="Expert" FontAttributes="Bold" Grid.Column="1" Grid.Row="2"  FontSize="Large" Clicked="Test_Clicked" CornerRadius="30" BackgroundColor="IndianRed" Margin = "5"/>
+       
+        <StackLayout Grid.ColumnSpan="2" BackgroundColor="White">
+            <Label Text = "Hearing" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" VerticalTextAlignment="End"  TextColor="DarkViolet"  />
+            <Label Text = "Test" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" VerticalTextAlignment="End" TextColor="DarkViolet" />
+
+        </StackLayout>
+    </Grid>
+</ContentPage>

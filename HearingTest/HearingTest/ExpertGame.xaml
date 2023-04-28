@@ -34,13 +34,13 @@
         <Label x:Name="Iteracja" FontSize="30" TextColor="White" Grid.Column="5" Grid.ColumnSpan="2" Grid.Row="0" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
 
         <Button x:Name="TestButton" VerticalOptions="Start" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="Black" Text="Click to hear the sound" Grid.Column="1" Grid.ColumnSpan="5" FontAttributes="Bold" TextTransform="None" Grid.Row="1"  FontSize="40" Clicked="TestButton_Clicked" CornerRadius="30"/>
-        <Button  x:Name="Button1" Grid.Column="0" Grid.Row="2" FontAttributes="Bold"  FontSize="40" Clicked="Button1_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "C" BorderWidth = "4"/>
-        <Button x:Name="Button2" Grid.Column="1" Grid.Row="2" FontAttributes="Bold"  FontSize="40" Clicked="Button2_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "D" BorderWidth = "4"/>
-        <Button x:Name="Button3" Grid.Column="2" Grid.Row="2" FontAttributes="Bold"  FontSize="40" Clicked="Button3_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "E" BorderWidth = "4"/>
-        <Button x:Name="Button4" Grid.Column="3" Grid.Row="2" FontAttributes="Bold"  FontSize="40" Clicked="Button4_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "F" BorderWidth = "4"/>
-        <Button x:Name="Button5" Grid.Column="4" Grid.Row="2" FontAttributes="Bold"  FontSize="40" Clicked="Button5_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "G" BorderWidth = "4"/>
-        <Button x:Name="Button6" Grid.Column="5" Grid.Row="2" FontAttributes="Bold"  FontSize="40" Clicked="Button6_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "A" BorderWidth = "4"/>
-        <Button x:Name="Button7" Grid.Column="6" Grid.Row="2" FontAttributes="Bold"  FontSize="40" Clicked="Button7_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "H" BorderWidth = "4"/>
+        <Button  x:Name="Button1" Grid.Column="0" Grid.Row="2" FontAttributes="Bold" FontSize="30" TextColor="Black" Clicked="Button1_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "C" BorderWidth = "4"/>
+        <Button x:Name="Button2" Grid.Column="1" Grid.Row="2" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button2_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "D" BorderWidth = "4"/>
+        <Button x:Name="Button3" Grid.Column="2" Grid.Row="2" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button3_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "E" BorderWidth = "4"/>
+        <Button x:Name="Button4" Grid.Column="3" Grid.Row="2" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button4_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "F" BorderWidth = "4"/>
+        <Button x:Name="Button5" Grid.Column="4" Grid.Row="2" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button5_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "G" BorderWidth = "4"/>
+        <Button x:Name="Button6" Grid.Column="5" Grid.Row="2" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button6_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "A" BorderWidth = "4"/>
+        <Button x:Name="Button7" Grid.Column="6" Grid.Row="2" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button7_Clicked" BorderColor = "Black" BackgroundColor="White" Text = "H" BorderWidth = "4"/>
         <Button Scale="2" x:Name="Next" Text="Next" Grid.Column="3" Grid.Row="3"  FontSize="Large" Clicked="Next_Clicked" Grid.ColumnSpan="3" BackgroundColor="Red"  CornerRadius="90" TextColor="White" HorizontalOptions="End" VerticalOptions="Center"/>
     </Grid>
 </ContentPage>

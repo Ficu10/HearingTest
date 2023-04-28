@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HearingTest.Intervals"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="DarkBlue"
+             Padding="5">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ImageButton x:Name="Answear1"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="1" Grid.Row="0" />
+        <ImageButton x:Name="Answear2"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="2" Grid.Row="0" />
+        <ImageButton x:Name="Answear3"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="3" Grid.Row="0" />
+        <ImageButton x:Name="Answear4"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="4" Grid.Row="0" />
+        <ImageButton x:Name="Answear5"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="5" Grid.Row="0" />
+        <ImageButton x:Name="Answear6"  BackgroundColor="Transparent" Source="questionImage.png"  VerticalOptions="End"  Grid.Column="1" Grid.Row="0" />
+        <ImageButton x:Name="Answear7"  BackgroundColor="Transparent" Source="questionImage.png"   VerticalOptions="End" Grid.Column="2" Grid.Row="0" />
+        <ImageButton x:Name="Answear8"  BackgroundColor="Transparent" Source="questionImage.png" VerticalOptions="End"  Grid.Column="3" Grid.Row="0" />
+        <ImageButton x:Name="Answear9"  BackgroundColor="Transparent" Source="questionImage.png" VerticalOptions="End" Grid.Column="4" Grid.Row="0" />
+        <ImageButton x:Name="Answear10" BackgroundColor="Transparent" Source="questionImage.png" VerticalOptions="End" Grid.Column="5" Grid.Row="0" />
+        <Label x:Name="Iteracja" FontSize="30" TextColor="White" Grid.Column="5" Grid.ColumnSpan="2" Grid.Row="0" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
+
+        <Button x:Name="TestButton" VerticalOptions="Start" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="White" Text="Click to hear the sound" Grid.Column="1" Grid.ColumnSpan="5" FontAttributes="Bold" TextTransform="None" Grid.Row="1"  FontSize="30" Clicked="TestButton_Clicked" CornerRadius="30"/>
+        <Button  CornerRadius="90" TextTransform="None" x:Name="Button1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button1_Clicked" BorderColor = "White" BackgroundColor="Skyblue" Text = "Pryma" BorderWidth = "4"/>
+        <Button  CornerRadius="90" TextTransform="None" x:Name="Button2" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button2_Clicked" BorderColor = "White" BackgroundColor="Skyblue" Text = "Tercja" BorderWidth = "4"/>
+        <Button  CornerRadius="90" TextTransform="None" x:Name="Button3" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button3_Clicked" BorderColor = "White" BackgroundColor="Skyblue" Text = "Kwinta" BorderWidth = "4"/>
+        <Button  CornerRadius="90" TextTransform="None" x:Name="Button4" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button4_Clicked" BorderColor = "White" BackgroundColor="Skyblue" Text = "Septyma" BorderWidth = "4"/>
+        <Button  CornerRadius="90" TextTransform="None" x:Name="Button5" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="3" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button5_Clicked" BorderColor = "White" BackgroundColor="Skyblue" Text = "Sekunda" BorderWidth = "4"/>
+        <Button  CornerRadius="90" TextTransform="None" x:Name="Button6" Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="3" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button6_Clicked" BorderColor = "White" BackgroundColor="Skyblue" Text = "Kwarta" BorderWidth = "4"/>
+        <Button  CornerRadius="90" TextTransform="None" x:Name="Button7" Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="3" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button7_Clicked" BorderColor = "White" BackgroundColor="Skyblue" Text = "Seksta" BorderWidth = "4"/>
+        <Button  CornerRadius="90" TextTransform="None" x:Name="Button8" Grid.Column="4" Grid.Row="5" Grid.ColumnSpan="3" FontAttributes="Bold"  FontSize="30" TextColor="Black" Clicked="Button8_Clicked" BorderColor = "White" BackgroundColor="Skyblue" Text = "Oktawa" BorderWidth = "4"/>
+        <Button Scale="1.2" TextTransform="None" x:Name="Next" Text="Next" Grid.Column="3" Grid.Row="6"  FontSize="Large" Clicked="Next_Clicked" Grid.ColumnSpan="3" BackgroundColor="LightBlue"  CornerRadius="90" TextColor="White" HorizontalOptions="End" VerticalOptions="Center"/>
+    </Grid>
+</ContentPage>

@@ -19,10 +19,13 @@ namespace HearingTest
         int usersSelect = 0;
         public static int points = 0;
         public static int i = 1;
+        bool isClick = false;
         public ExpertGame()
         {
             InitializeComponent();
             Iteracja.Text = i.ToString();
+            Random r = new Random();
+            selectMusic = r.Next(1, 8);
         }
 
         private void Button1_Clicked(object sender, EventArgs e)
@@ -101,6 +104,7 @@ namespace HearingTest
 
         private void TestButton_Clicked(object sender, EventArgs e)
         {
+            isClick = true;
             Stream fileName = GetStreamFromFile("c4.mp3");
             switch (selectMusic)
             {
@@ -134,93 +138,101 @@ namespace HearingTest
 
         private async void Next_Clicked(object sender, EventArgs e)
         {
-            TestButton.IsVisible = true;
-            AllBackGroundsWhite();
-            if (selectMusic == usersSelect)
+            if (isClick == true)
             {
-                points++;
-                switch (i)
+                TestButton.IsVisible = true;
+                AllBackGroundsWhite();
+                if (selectMusic == usersSelect)
                 {
-                    case 1:
-                        Answear1.Source = "goodImage.png";
-                        break;
-                    case 2:
-                        Answear2.Source = "goodImage.png";
-                        break;
-                    case 3:
-                        Answear3.Source = "goodImage.png";
-                        break;
-                    case 4:
-                        Answear4.Source = "goodImage.png";
-                        break;
-                    case 5:
-                        Answear5.Source = "goodImage.png";
-                        break;
-                    case 6:
-                        Answear6.Source = "goodImage.png";
-                        break;
-                    case 7:
-                        Answear7.Source = "goodImage.png";
-                        break;
-                    case 8:
-                        Answear8.Source = "goodImage.png";
-                        break;
-                    case 9:
-                        Answear9.Source = "goodImage.png";
-                        break;
-                    case 10:
-                        Answear10.Source = "goodImage.png";
-                        break;
-                }
+                    points++;
+                    switch (i)
+                    {
+                        case 1:
+                            Answear1.Source = "goodImage.png";
+                            break;
+                        case 2:
+                            Answear2.Source = "goodImage.png";
+                            break;
+                        case 3:
+                            Answear3.Source = "goodImage.png";
+                            break;
+                        case 4:
+                            Answear4.Source = "goodImage.png";
+                            break;
+                        case 5:
+                            Answear5.Source = "goodImage.png";
+                            break;
+                        case 6:
+                            Answear6.Source = "goodImage.png";
+                            break;
+                        case 7:
+                            Answear7.Source = "goodImage.png";
+                            break;
+                        case 8:
+                            Answear8.Source = "goodImage.png";
+                            break;
+                        case 9:
+                            Answear9.Source = "goodImage.png";
+                            break;
+                        case 10:
+                            Answear10.Source = "goodImage.png";
+                            break;
+                    }
 
-            }
-            else
-            {
-                switch (i)
+                }
+                else
                 {
-                    case 1:
-                        Answear1.Source = "wrongImage.png";
-                        break;
-                    case 2:
-                        Answear2.Source = "wrongImage.png";
-                        break;
-                    case 3:
-                        Answear3.Source = "wrongImage.png";
-                        break;
-                    case 4:
-                        Answear4.Source = "wrongImage.png";
-                        break;
-                    case 5:
-                        Answear5.Source = "wrongImage.png";
-                        break;
-                    case 6:
-                        Answear6.Source = "wrongImage.png";
-                        break;
-                    case 7:
-                        Answear7.Source = "wrongImage.png";
-                        break;
-                    case 8:
-                        Answear8.Source = "wrongImage.png";
-                        break;
-                    case 9:
-                        Answear9.Source = "wrongImage.png";
-                        break;
-                    case 10:
-                        Answear10.Source = "wrongImage.png";
-                        break;
+                    switch (i)
+                    {
+                        case 1:
+                            Answear1.Source = "wrongImage.png";
+                            break;
+                        case 2:
+                            Answear2.Source = "wrongImage.png";
+                            break;
+                        case 3:
+                            Answear3.Source = "wrongImage.png";
+                            break;
+                        case 4:
+                            Answear4.Source = "wrongImage.png";
+                            break;
+                        case 5:
+                            Answear5.Source = "wrongImage.png";
+                            break;
+                        case 6:
+                            Answear6.Source = "wrongImage.png";
+                            break;
+                        case 7:
+                            Answear7.Source = "wrongImage.png";
+                            break;
+                        case 8:
+                            Answear8.Source = "wrongImage.png";
+                            break;
+                        case 9:
+                            Answear9.Source = "wrongImage.png";
+                            break;
+                        case 10:
+                            Answear10.Source = "wrongImage.png";
+                            break;
+                    }
                 }
-            }
-            if (i == 10)
-            {
-                i = 0;
-                await Navigation.PushAsync(new EndGame());
-            }
-            i++;
-            Iteracja.Text = i.ToString();
+                if (i == 10)
+                {
+                    i = 0;
+                    await Navigation.PushAsync(new EndGame());
+                }
+                i++;
+                Iteracja.Text = i.ToString();
 
-            Random r = new Random();
-            selectMusic = r.Next(1, 8);
-            usersSelect = 0;
+                Random r = new Random();
+                selectMusic = r.Next(1, 8);
+                usersSelect = 0;
+                isClick = false;
+            }
+
+
         }
+
+
     }
 }

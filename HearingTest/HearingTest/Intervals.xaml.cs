@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -11,32 +12,33 @@ using Xamarin.Forms.Xaml;
 
 namespace HearingTest
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MediumGame : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Intervals : ContentPage
     {
 
-        int selectMusic = 1;
+        int selectMusic1;
+        int selectMusic2;
         int usersSelect = 0;
         public static int points = 0;
         public static int i = 1;
         bool isClick = false;
-        public MediumGame()
+        public Intervals()
         {
             InitializeComponent();
             Iteracja.Text = i.ToString();
             Random r = new Random();
-            selectMusic = r.Next(1, 8);
+            selectMusic1 = r.Next(1, 9);
+            Thread.Sleep(100);
+            selectMusic2 = r.Next(1, 9);
+
         }
 
         private void Button1_Clicked(object sender, EventArgs e)
         {
             AllBackGroundsWhite();
             Button1.BackgroundColor = Color.Green;
-            usersSelect = 1;
-            Stream fileName = GetStreamFromFile("c4.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
+            usersSelect = 0;
+          
         }
 
         private void Button2_Clicked(object sender, EventArgs e)
@@ -44,75 +46,57 @@ namespace HearingTest
             AllBackGroundsWhite();
             Button2.BackgroundColor = Color.Green;
             usersSelect = 2;
-            Stream fileName = GetStreamFromFile("d4.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
+         
         }
 
         private void Button3_Clicked(object sender, EventArgs e)
         {
             AllBackGroundsWhite();
             Button3.BackgroundColor = Color.Green;
-            usersSelect = 3;
-            Stream fileName = GetStreamFromFile("e4.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
+            usersSelect = 4;
+         
         }
 
         private void Button4_Clicked(object sender, EventArgs e)
         {
             AllBackGroundsWhite();
             Button4.BackgroundColor = Color.Green;
-            usersSelect = 4;
-            Stream fileName = GetStreamFromFile("f4.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
+            usersSelect = 6;
+           
         }
 
         private void Button5_Clicked(object sender, EventArgs e)
         {
             AllBackGroundsWhite();
             Button5.BackgroundColor = Color.Green;
-            usersSelect = 5;
-            Stream fileName = GetStreamFromFile("g4.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
+            usersSelect = 1;
+          
         }
 
         private void Button6_Clicked(object sender, EventArgs e)
         {
             AllBackGroundsWhite();
             Button6.BackgroundColor = Color.Green;
-            usersSelect = 6;
-            Stream fileName = GetStreamFromFile("a5.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
+            usersSelect = 3;
+           
         }
 
         private void Button7_Clicked(object sender, EventArgs e)
         {
             AllBackGroundsWhite();
             Button7.BackgroundColor = Color.Green;
-            usersSelect = 7;
-            Stream fileName = GetStreamFromFile("b5.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
+            usersSelect = 5;
+           
         }
         private void AllBackGroundsWhite()
         {
-            Button1.BackgroundColor = Color.White;
-            Button2.BackgroundColor = Color.White;
-            Button3.BackgroundColor = Color.White;
-            Button4.BackgroundColor = Color.White;
-            Button5.BackgroundColor = Color.White;
-            Button6.BackgroundColor = Color.White;
-            Button7.BackgroundColor = Color.White;
+            Button1.BackgroundColor = Color.SkyBlue;
+            Button2.BackgroundColor = Color.SkyBlue;
+            Button3.BackgroundColor = Color.SkyBlue;
+            Button4.BackgroundColor = Color.SkyBlue;
+            Button5.BackgroundColor = Color.SkyBlue;
+            Button6.BackgroundColor = Color.SkyBlue;
+            Button7.BackgroundColor = Color.SkyBlue;
         }
 
         Stream GetStreamFromFile(string filename)
@@ -127,7 +111,7 @@ namespace HearingTest
         {
             isClick = true;
             Stream fileName = GetStreamFromFile("c4.mp3");
-            switch (selectMusic)
+            switch (selectMusic1)
             {
                 case 1:
                     fileName = GetStreamFromFile("c4.mp3");
@@ -150,8 +134,42 @@ namespace HearingTest
                 case 7:
                     fileName = GetStreamFromFile("b5.mp3");
                     break;
+                case 8:
+                    fileName = GetStreamFromFile("c5.mp3");
+                    break;
             }
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            audio.Load(fileName);
+            audio.Play();
+            Thread.Sleep(1000);
+            switch (selectMusic2)
+            {
+                case 1:
+                    fileName = GetStreamFromFile("c4.mp3");
+                    break;
+                case 2:
+                    fileName = GetStreamFromFile("d4.mp3");
+                    break;
+                case 3:
+                    fileName = GetStreamFromFile("e4.mp3");
+                    break;
+                case 4:
+                    fileName = GetStreamFromFile("f4.mp3");
+                    break;
+                case 5:
+                    fileName = GetStreamFromFile("g4.mp3");
+                    break;
+                case 6:
+                    fileName = GetStreamFromFile("a5.mp3");
+                    break;
+                case 7:
+                    fileName = GetStreamFromFile("b5.mp3");
+                    break;
+                case 8:
+                    fileName = GetStreamFromFile("c5.mp3");
+                    break;
+            }
+
             audio.Load(fileName);
             audio.Play();
             TestButton.IsVisible = false;
@@ -163,7 +181,7 @@ namespace HearingTest
             {
                 TestButton.IsVisible = true;
                 AllBackGroundsWhite();
-                if (selectMusic == usersSelect)
+                if (Math.Abs((selectMusic1 - selectMusic2)) == usersSelect)
                 {
                     points++;
                     switch (i)
@@ -246,12 +264,21 @@ namespace HearingTest
                 Iteracja.Text = i.ToString();
 
                 Random r = new Random();
-                selectMusic = r.Next(1, 8);
+                selectMusic1 = r.Next(1, 9);
+                Thread.Sleep(1000);
+                selectMusic2 = r.Next(1, 9);
                 usersSelect = 0;
                 isClick = false;
             }
-            
-            
+
+
+        }
+
+        private void Button8_Clicked(object sender, EventArgs e)
+        {
+            AllBackGroundsWhite();
+            Button8.BackgroundColor = Color.Green;
+            usersSelect = 7;
         }
     }
 }
