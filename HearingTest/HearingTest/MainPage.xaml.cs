@@ -46,7 +46,7 @@ namespace HearingTest
 
         private async void IntervalsButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Intervals());
+            await Navigation.PushAsync(new MenuIntervals());
             level = 5;
         }
     }

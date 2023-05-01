@@ -16,7 +16,7 @@ namespace HearingTest.Droid
             base.OnCreate(savedInstanceState);
 
             Window.DecorView.SystemUiVisibility = (StatusBarVisibility)(SystemUiFlags.LayoutFullscreen | SystemUiFlags.LayoutStable | SystemUiFlags.HideNavigation | SystemUiFlags.Fullscreen | SystemUiFlags.ImmersiveSticky);
-
+            RequestedOrientation = ScreenOrientation.Portrait;
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
@@ -28,10 +28,7 @@ namespace HearingTest.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+        
 
-        public override void OnBackPressed()
-        {
-            
-        }
     }
 }
