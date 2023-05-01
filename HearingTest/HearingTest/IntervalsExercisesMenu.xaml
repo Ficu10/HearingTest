@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HearingTest.IntervalsExercisesMenu"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="DarkViolet"
+             Padding="10">
+    <Grid x:Name="myGrid" RowSpacing="10" ColumnSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="Wybierz interwał do treningu" FontSize="Large" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" TextColor="White"/>
+
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Pryma" Text="Pryma" Grid.Row="1" Grid.Column="0" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SekundaM" Text="Sekuda mała" Grid.Row="1" Grid.Column="1" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SekundaW" Text="Sekunda wielka" Grid.Row="1" Grid.Column="2" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="TercjaM" Text="Tercja mała" Grid.Row="2" Grid.Column="0" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="TercjaW" Text="Tercja wielka" Grid.Row="2" Grid.Column="1" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Kwarta" Text="Kwarta czysta" Grid.Row="2" Grid.Column="2" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Tryton" Text="Tryton" Grid.Row="3" Grid.Column="0" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Kwinta" Text="Kwinta czysta" Grid.Row="3" Grid.Column="1" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SekstaM" Text="Seksta mała" Grid.Row="3" Grid.Column="2" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SekstaW" Text="Seksta wielka" Grid.Row="4" Grid.Column="0" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SeptymaM" Text="Septyma mała" Grid.Row="4" Grid.Column="1" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SeptymaW" Text="Septyma wielka" Grid.Row="4" Grid.Column="2" />
+        <Button TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Oktawa" Text="Oktawa" Grid.Row="5" Grid.Column="1" />
+        <Button BorderColor="White" BorderWidth="5" TextColor="White" BackgroundColor="YellowGreen" FontSize="Medium" CornerRadius="20" TextTransform="None" x:Name="Start" Text="Start" Grid.Row="5" Grid.Column="2" Margin="0,10,0,10" Clicked="Start_Clicked"/>
+        
+        
+    </Grid>
+</ContentPage>

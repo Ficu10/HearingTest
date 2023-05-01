@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HearingTest.IntervalsExercises" 
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="DarkViolet"
+             Padding="10">
+
+    <Grid x:Name="Grid13">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ImageButton x:Name="Answear1"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="1" Grid.Row="0" />
+        <ImageButton x:Name="Answear2"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="2" Grid.Row="0" />
+        <ImageButton x:Name="Answear3"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="3" Grid.Row="0" />
+        <ImageButton x:Name="Answear4"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="4" Grid.Row="0" />
+        <ImageButton x:Name="Answear5"  BackgroundColor="Transparent" Source="questionImage.png"  Grid.Column="5" Grid.Row="0" />
+        <ImageButton x:Name="Answear6"  BackgroundColor="Transparent" Source="questionImage.png"  VerticalOptions="End"  Grid.Column="1" Grid.Row="0" />
+        <ImageButton x:Name="Answear7"  BackgroundColor="Transparent" Source="questionImage.png"  VerticalOptions="End" Grid.Column="2" Grid.Row="0" />
+        <ImageButton x:Name="Answear8"  BackgroundColor="Transparent" Source="questionImage.png" VerticalOptions="End"  Grid.Column="3" Grid.Row="0" />
+        <ImageButton x:Name="Answear9"  BackgroundColor="Transparent" Source="questionImage.png" VerticalOptions="End" Grid.Column="4" Grid.Row="0" />
+        <ImageButton x:Name="Answear10" BackgroundColor="Transparent" Source="questionImage.png" VerticalOptions="End" Grid.Column="5" Grid.Row="0" />
+        <Label x:Name="Iteracja" FontSize="30" TextColor="White" Grid.Column="5" Grid.ColumnSpan="2" Grid.Row="0" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
+
+       
+        <Button x:Name="TestButton" VerticalOptions="Start" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="White" Text="Click to hear the sound" Grid.Column="1" Grid.ColumnSpan="5" FontAttributes="Bold" TextTransform="None" Grid.Row="1"  FontSize="30" Clicked="TestButton_Clicked" CornerRadius="30"/>
+        <ScrollView VerticalScrollBarVisibility="Never" Grid.Row="2" Grid.ColumnSpan="7" Grid.RowSpan="4">
+            <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                <Button Clicked="Pryma_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Pryma" Text="Pryma" Grid.Row="1" Grid.Column="0" />
+                <Button Clicked="SekundaM_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SekundaM" Text="Sekuda mała" Grid.Row="1" Grid.Column="1"/>
+                <Button Clicked="SekundaW_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SekundaW" Text="Sekunda wielka" Grid.Row="1" Grid.Column="2" />
+                <Button Clicked="TercjaM_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="TercjaM" Text="Tercja mała" Grid.Row="2" Grid.Column="0" />
+                <Button Clicked="TercjaW_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="TercjaW" Text="Tercja wielka" Grid.Row="2" Grid.Column="1" />
+                <Button Clicked="Kwarta_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Kwarta" Text="Kwarta czysta" Grid.Row="2" Grid.Column="2" />
+                <Button Clicked="Tryton_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Tryton" Text="Tryton" Grid.Row="3" Grid.Column="0" />
+                <Button Clicked="Kwinta_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Kwinta" Text="Kwinta czysta" Grid.Row="3" Grid.Column="1" />
+                <Button Clicked="SekstaM_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SekstaM" Text="Seksta mała" Grid.Row="3" Grid.Column="2" />
+                <Button Clicked="SekstaW_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SekstaW" Text="Seksta wielka" Grid.Row="4" Grid.Column="0" />
+                <Button Clicked="SeptymaM_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SeptymaM" Text="Septyma mała" Grid.Row="4" Grid.Column="1" />
+                <Button Clicked="SeptymaW_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SeptymaW" Text="Septyma wielka" Grid.Row="4" Grid.Column="2" />
+                <Button Clicked="Oktawa_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Oktawa" Text="Oktawa" Grid.Row="5" Grid.Column="1" />
+            </StackLayout>
+        </ScrollView>
+       
+       
+
+
+
+
+
+    </Grid>
+</ContentPage>
