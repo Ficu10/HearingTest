@@ -154,6 +154,66 @@ namespace HearingTest
             AllBlackisible();
 
         }
+
+        private void Button8_Clicked(object sender, EventArgs e)
+        {
+            AllBackGroundsWhite();
+            Button8.BackgroundColor = Color.Green;
+            usersSelect = 2;
+            Stream fileName = GetStreamFromFile("Db4.mp3");
+            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            audio.Load(fileName);
+            audio.Play();
+            AllBlackisible();
+        }
+
+        private void Button9_Clicked(object sender, EventArgs e)
+        {
+            AllBackGroundsWhite();
+            Button9.BackgroundColor = Color.Green;
+            usersSelect = 4;
+            Stream fileName = GetStreamFromFile("Eb4.mp3");
+            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            audio.Load(fileName);
+            audio.Play();
+            AllBlackisible();
+        }
+
+        private void Button10_Clicked(object sender, EventArgs e)
+        {
+            AllBackGroundsWhite();
+            Button10.BackgroundColor = Color.Green;
+            usersSelect = 7;
+            Stream fileName = GetStreamFromFile("Gb4.mp3");
+            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            audio.Load(fileName);
+            audio.Play();
+            AllBlackisible();
+        }
+
+        private void Button11_Clicked(object sender, EventArgs e)
+        {
+            AllBackGroundsWhite();
+            Button11.BackgroundColor = Color.Green;
+            usersSelect = 9;
+            Stream fileName = GetStreamFromFile("Ab4.mp3");
+            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            audio.Load(fileName);
+            audio.Play();
+            AllBlackisible();
+        }
+
+        private void Button12_Clicked(object sender, EventArgs e)
+        {
+            AllBackGroundsWhite();
+            Button12.BackgroundColor = Color.Green;
+            usersSelect = 11;
+            Stream fileName = GetStreamFromFile("Bb4.mp3");
+            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            audio.Load(fileName);
+            audio.Play();
+            AllBlackisible();
+        }
         private void AllBackGroundsWhite()
         {
             Button1.BackgroundColor = Color.White;
@@ -350,64 +410,6 @@ namespace HearingTest
         }
 
     
-        private void Button8_Clicked(object sender, EventArgs e)
-        {
-            AllBackGroundsWhite();
-            Button8.BackgroundColor = Color.Green;
-            usersSelect = 2;
-            Stream fileName = GetStreamFromFile("Db4.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
-            AllBlackisible();
-        }
-
-        private void Button9_Clicked(object sender, EventArgs e)
-        {
-            AllBackGroundsWhite();
-            Button9.BackgroundColor = Color.Green;
-            usersSelect = 4;
-            Stream fileName = GetStreamFromFile("Eb4.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
-            AllBlackisible();
-        }
-
-        private void Button10_Clicked(object sender, EventArgs e)
-        {
-            AllBackGroundsWhite();
-            Button10.BackgroundColor = Color.Green;
-            usersSelect = 7;
-            Stream fileName = GetStreamFromFile("Gb4.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
-            AllBlackisible();
-        }
-
-        private void Button11_Clicked(object sender, EventArgs e)
-        {
-            AllBackGroundsWhite();
-            Button11.BackgroundColor = Color.Green;
-            usersSelect = 9;
-            Stream fileName = GetStreamFromFile("Ab4.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
-            AllBlackisible();
-        }
-
-        private void Button12_Clicked(object sender, EventArgs e)
-        {
-            AllBackGroundsWhite();
-            Button12.BackgroundColor = Color.Green;
-            usersSelect = 11;
-            Stream fileName = GetStreamFromFile("Bb4.mp3");
-            var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
-            audio.Load(fileName);
-            audio.Play();
-            AllBlackisible();
-        }
+      
     }
 }
