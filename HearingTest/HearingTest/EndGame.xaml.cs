@@ -38,8 +38,8 @@ namespace HearingTest
                     OnceAgain.BackgroundColor = Color.IndianRed;
                     break;
                 case 5:
-                    Score.Text = "Your Score is " + Intervals.points.ToString() + "/10";
-                    Intervals.points = 0;
+                    Score.Text = "Your Score is " + IntervalsExercises.points.ToString() + "/10";
+                    IntervalsExercises.points = 0;
                     OnceAgain.BackgroundColor = Color.DarkBlue;
                     break;
             }
@@ -51,6 +51,10 @@ namespace HearingTest
 
         private async void Menu_Clicked(object sender, EventArgs e)
         {
+            if (MainPage.level == 5)
+            {
+                IntervalsExercisesMenu.listOfIntervals.Clear();
+            }
             await Navigation.PushAsync(new MainPage());
         }
 
@@ -71,7 +75,7 @@ namespace HearingTest
                     await Navigation.PushAsync(new ExpertGame());
                     break;
                 case 5:
-                    await Navigation.PushAsync(new Intervals());
+                    await Navigation.PushAsync(new IntervalsExercises());
                     break;
             }
         }
