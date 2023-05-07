@@ -48,7 +48,10 @@ namespace HearingTest
 
             }
         }
-
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
         private async void Menu_Clicked(object sender, EventArgs e)
         {
             if (MainPage.level == 5)

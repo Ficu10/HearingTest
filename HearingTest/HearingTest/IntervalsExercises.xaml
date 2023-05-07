@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HearingTest.IntervalsExercises" 
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="Black"
+             BackgroundColor="#b85f5f"
              Padding="10">
 
     <Grid x:Name="Grid13">
@@ -38,26 +38,26 @@
         <Label x:Name="Iteracja" FontSize="30" TextColor="White" Grid.Column="5" Grid.ColumnSpan="2" Grid.Row="0" VerticalTextAlignment="Start" HorizontalTextAlignment="Center"/>
 
        
-        <Button x:Name="TestButton" VerticalOptions="Start" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="White" Text="Click to hear the sound" Grid.Column="1" Grid.ColumnSpan="5" FontAttributes="Bold" TextTransform="None" Grid.Row="1"  FontSize="30" Clicked="TestButton_Clicked" CornerRadius="30"/>
+        <Button x:Name="TestButton" VerticalOptions="Start" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="White" Text="Kliknij, aby usłyszeć interwał" Grid.Column="1" Grid.ColumnSpan="5" FontAttributes="Bold" TextTransform="None" Grid.Row="1"  FontSize="30" Clicked="TestButton_Clicked" CornerRadius="30"/>
         <ScrollView VerticalScrollBarVisibility="Never" Grid.Row="2" Grid.ColumnSpan="5" Grid.Column="1"  Grid.RowSpan="4">
             <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
-                <Button IsVisible = "false" Clicked="Pryma_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="Pryma" Text="Pryma" Grid.Row="1" Grid.Column="0" />
-                <Button IsVisible = "false" Clicked="SekundaM_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="SekundaM" Text="Sekuda mała" Grid.Row="1" Grid.Column="1"/>
-                <Button IsVisible = "false" Clicked="SekundaW_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="SekundaW" Text="Sekunda wielka" Grid.Row="1" Grid.Column="2" />
-                <Button IsVisible = "false" Clicked="TercjaM_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="TercjaM" Text="Tercja mała" Grid.Row="2" Grid.Column="0" />
-                <Button IsVisible = "false" Clicked="TercjaW_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="TercjaW" Text="Tercja wielka" Grid.Row="2" Grid.Column="1" />
-                <Button IsVisible = "false" Clicked="Kwarta_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="Kwarta" Text="Kwarta czysta" Grid.Row="2" Grid.Column="2" />
-                <Button IsVisible = "false" Clicked="Tryton_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="Tryton" Text="Tryton" Grid.Row="3" Grid.Column="0" />
-                <Button IsVisible = "false" Clicked="Kwinta_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="Kwinta" Text="Kwinta czysta" Grid.Row="3" Grid.Column="1" />
-                <Button IsVisible = "false" Clicked="SekstaM_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="SekstaM" Text="Seksta mała" Grid.Row="3" Grid.Column="2" />
-                <Button IsVisible = "false" Clicked="SekstaW_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="SekstaW" Text="Seksta wielka" Grid.Row="4" Grid.Column="0" />
-                <Button IsVisible = "false" Clicked="SeptymaM_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="SeptymaM" Text="Septyma mała" Grid.Row="4" Grid.Column="1" />
-                <Button IsVisible = "false" Clicked="SeptymaW_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="SeptymaW" Text="Septyma wielka" Grid.Row="4" Grid.Column="2" />
-                <Button IsVisible = "false" Clicked="Oktawa_Clicked" TextColor="White" BackgroundColor="HotPink" CornerRadius="20" TextTransform="None" x:Name="Oktawa" Text="Oktawa" Grid.Row="5" Grid.Column="1" />
+                <Button IsVisible = "false" Clicked="Pryma_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="Pryma" Text="Pryma" Grid.Row="1" Grid.Column="0" />
+                <Button IsVisible = "false" Clicked="SekundaM_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="SekundaM" Text="Sekuda mała" Grid.Row="1" Grid.Column="1"/>
+                <Button IsVisible = "false" Clicked="SekundaW_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="SekundaW" Text="Sekunda wielka" Grid.Row="1" Grid.Column="2" />
+                <Button IsVisible = "false" Clicked="TercjaM_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="TercjaM" Text="Tercja mała" Grid.Row="2" Grid.Column="0" />
+                <Button IsVisible = "false" Clicked="TercjaW_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="TercjaW" Text="Tercja wielka" Grid.Row="2" Grid.Column="1" />
+                <Button IsVisible = "false" Clicked="Kwarta_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="Kwarta" Text="Kwarta czysta" Grid.Row="2" Grid.Column="2" />
+                <Button IsVisible = "false" Clicked="Tryton_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="Tryton" Text="Tryton" Grid.Row="3" Grid.Column="0" />
+                <Button IsVisible = "false" Clicked="Kwinta_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="Kwinta" Text="Kwinta czysta" Grid.Row="3" Grid.Column="1" />
+                <Button IsVisible = "false" Clicked="SekstaM_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="SekstaM" Text="Seksta mała" Grid.Row="3" Grid.Column="2" />
+                <Button IsVisible = "false" Clicked="SekstaW_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="SekstaW" Text="Seksta wielka" Grid.Row="4" Grid.Column="0" />
+                <Button IsVisible = "false" Clicked="SeptymaM_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="SeptymaM" Text="Septyma mała" Grid.Row="4" Grid.Column="1" />
+                <Button IsVisible = "false" Clicked="SeptymaW_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="SeptymaW" Text="Septyma wielka" Grid.Row="4" Grid.Column="2" />
+                <Button IsVisible = "false" Clicked="Oktawa_Clicked" TextColor="White" BackgroundColor="#6b3b3b" CornerRadius="20" TextTransform="None" x:Name="Oktawa" Text="Oktawa" Grid.Row="5" Grid.Column="1" />
             </StackLayout>
 
         </ScrollView>
-        <Button x:Name="Next" Text="Next" Grid.Column="3" Grid.Row="6"  FontSize="Large" Clicked="Next_Clicked" Grid.ColumnSpan="3" BackgroundColor="Pink"  CornerRadius="90" TextColor="White" HorizontalOptions="End" VerticalOptions="Center"/>
+        <Button x:Name="Next" Text="Next" Grid.Column="3" Grid.Row="6"  FontSize="Large" Clicked="Next_Clicked" Grid.ColumnSpan="3" BackgroundColor="#6b3b3b"  CornerRadius="90" TextColor="White" HorizontalOptions="End" VerticalOptions="Center"/>
 
 
 

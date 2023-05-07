@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HearingTest.IntervalsExercisesMenu"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="DarkViolet"
+             BackgroundColor="#b85f5f"
              Padding="10">
     <Grid x:Name="myGrid" RowSpacing="10" ColumnSpacing="10">
         <Grid.RowDefinitions>
@@ -19,7 +19,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Label Text="Wybierz interwał do treningu" FontSize="Large" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" TextColor="White"/>
+        <Label Text="Wybierz interwał do treningu" FontAttributes="Bold" FontSize="30" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" TextColor="White"/>
 
         <Button Clicked="Pryma_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="Pryma" Text="Pryma" Grid.Row="1" Grid.Column="0" />
         <Button Clicked="SekundaM_Clicked" TextColor="Gray" BackgroundColor="LightGray" CornerRadius="20" TextTransform="None" x:Name="SekundaM" Text="Sekuda mała" Grid.Row="1" Grid.Column="1" />

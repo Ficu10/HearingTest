@@ -155,19 +155,19 @@ namespace HearingTest
 
         public void AllPink()
         {
-            Pryma.BackgroundColor = Color.HotPink;
-            SekundaM.BackgroundColor = Color.HotPink;
-            SekundaW.BackgroundColor = Color.HotPink;
-            TercjaM.BackgroundColor = Color.HotPink;
-            TercjaW.BackgroundColor = Color.HotPink;
-            Kwarta.BackgroundColor = Color.HotPink;
-            Tryton.BackgroundColor = Color.HotPink;
-            Kwinta.BackgroundColor = Color.HotPink;
-            SekstaM.BackgroundColor = Color.HotPink;
-            SekstaW.BackgroundColor = Color.HotPink;
-            SeptymaM.BackgroundColor = Color.HotPink;
-            SeptymaW.BackgroundColor = Color.HotPink;
-            Oktawa.BackgroundColor = Color.HotPink;
+            Pryma.BackgroundColor = Color.FromHex("#6b3b3b"); 
+            SekundaM.BackgroundColor = Color.FromHex("#6b3b3b");
+            SekundaW.BackgroundColor = Color.FromHex("#6b3b3b");
+            TercjaM.BackgroundColor = Color.FromHex("#6b3b3b");
+            TercjaW.BackgroundColor = Color.FromHex("#6b3b3b");
+            Kwarta.BackgroundColor = Color.FromHex("#6b3b3b");
+            Tryton.BackgroundColor = Color.FromHex("#6b3b3b");
+            Kwinta.BackgroundColor = Color.FromHex("#6b3b3b");
+            SekstaM.BackgroundColor = Color.FromHex("#6b3b3b");
+            SekstaW.BackgroundColor = Color.FromHex("#6b3b3b");
+            SeptymaM.BackgroundColor = Color.FromHex("#6b3b3b");
+            SeptymaW.BackgroundColor = Color.FromHex("#6b3b3b");
+            Oktawa.BackgroundColor = Color.FromHex("#6b3b3b");
         }
         private void Pryma_Clicked(object sender, EventArgs e)
         {
@@ -267,7 +267,7 @@ namespace HearingTest
             {
                 TestButton.IsVisible = true;
                 AllPink();
-                if (usersSelect == Math.Abs(selectMusic1 - selectMusic2) % 12)
+                if (usersSelect == Math.Abs(selectMusic1 - selectMusic2) % 13)
                 {
                     points++;
                     switch (i)

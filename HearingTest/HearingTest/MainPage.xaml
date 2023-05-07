@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HearingTest.MainPage"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="DarkViolet"
+             BackgroundColor="#282c6b"
              Padding="0">
 
     <Grid>
@@ -19,18 +19,18 @@
         </Grid.ColumnDefinitions>
         <ScrollView VerticalScrollBarVisibility="Never" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="4">
             <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
-                <Button  BorderColor = "White" BorderWidth = "5" x:Name="EasyButton" Text="Easy" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" FontSize="Large" Clicked="EasyButton_Clicked" CornerRadius="30" BackgroundColor="LightGreen" Margin = "5"/>
-                <Button  BorderColor = "White" BorderWidth = "5" x:Name="MediumButton" Text="Medium" FontAttributes="Bold" Grid.Column="1" Grid.Row="1" FontSize="Large" Clicked="MediumButton_Clicked" CornerRadius="30" BackgroundColor="DeepSkyBlue" Margin = "5"/>
-                <Button  BorderColor = "White" BorderWidth = "5" x:Name="HardButton" Text="Hard" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" FontSize="Large" Clicked="HardButton_Clicked" CornerRadius="30" BackgroundColor="DimGray" Margin = "5"/>
-                <Button  BorderColor = "White" BorderWidth = "5" x:Name="ExpertButton" Text="Expert" FontAttributes="Bold" Grid.Column="1" Grid.Row="2"  FontSize="Large" Clicked="ExpertButton_Clicked" CornerRadius="30" BackgroundColor="IndianRed" Margin = "5"/>
-                <Button  BorderColor = "White" BorderWidth = "5" x:Name="IntervalsButton" Text="Intervals" FontAttributes="Bold" Grid.Column="0" Grid.Row="3"  FontSize="Large" Clicked="IntervalsButton_Clicked" CornerRadius="30" BackgroundColor="DarkBlue" Margin = "5"/>
+                <Button HeightRequest="100" TextTransform="None" TextColor="White"  BorderColor = "White" BorderWidth = "5" x:Name="EasyButton" Text="Łatwy" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" FontSize="Large" Clicked="EasyButton_Clicked" CornerRadius="30" BackgroundColor="#4d55db" Margin = "5"/>
+                <Button HeightRequest="100" TextTransform="None" TextColor="White"  BorderColor = "White" BorderWidth = "5" x:Name="MediumButton" Text="Średni" FontAttributes="Bold" Grid.Column="1" Grid.Row="1" FontSize="Large" Clicked="MediumButton_Clicked" CornerRadius="30" BackgroundColor="#6a70d9" Margin = "5"/>
+                <Button HeightRequest="100" TextTransform="None" TextColor="White"  BorderColor = "White" BorderWidth = "5" x:Name="HardButton" Text="Trudny" FontAttributes="Bold" Grid.Column="0" Grid.Row="2" FontSize="Large" Clicked="HardButton_Clicked" CornerRadius="30" BackgroundColor="#8295d9" Margin = "5"/>
+                <Button HeightRequest="100" TextTransform="None" TextColor="White"  BorderColor = "White" BorderWidth = "5" x:Name="ExpertButton" Text="Ekspert" FontAttributes="Bold" Grid.Column="1" Grid.Row="2"  FontSize="Large" Clicked="ExpertButton_Clicked" CornerRadius="30" BackgroundColor="#9faad1" Margin = "5"/>
+                <Button HeightRequest="100" TextTransform="None" TextColor="White"  BorderColor = "White" BorderWidth = "5" x:Name="IntervalsButton" Text="Interwały" FontAttributes="Bold" Grid.Column="0" Grid.Row="3"  FontSize="Large" Clicked="IntervalsButton_Clicked" CornerRadius="30" BackgroundColor="#d0d2d9" Margin = "5"/>
             </StackLayout>
            
         </ScrollView>
-        
-        <StackLayout Grid.ColumnSpan="2" BackgroundColor="White">
-            <Label Text = "Hearing" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" VerticalTextAlignment="End"  TextColor="DarkViolet"  />
-            <Label Text = "Test" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" VerticalTextAlignment="End" TextColor="DarkViolet" />
+        <Button Grid.ColumnSpan="2" BorderColor="White" BackgroundColor="Transparent" BorderWidth="10"/>
+        <StackLayout Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" >
+            <Label Text = "Sprawdź swój" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" VerticalTextAlignment="End"  TextColor="White"  />
+            <Label Text = "słuch muzyczny" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" VerticalTextAlignment="End" TextColor="White" />
     
         </StackLayout>
     </Grid>

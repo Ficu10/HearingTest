@@ -49,5 +49,9 @@ namespace HearingTest
             await Navigation.PushAsync(new IntervalsExercisesMenu());
             level = 5;
         }
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
     }
 }

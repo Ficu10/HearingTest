@@ -22,6 +22,7 @@ namespace HearingTest
         public static int points = 0;
         public static int i = 1;
         bool isClick = false;
+        bool bClick = false;
         public HardGame()
         {
             InitializeComponent();
@@ -36,30 +37,49 @@ namespace HearingTest
 
         public void AllBlackisible()
         {
-            Button9.IsVisible = true;
-            Button10.IsVisible = true;
-            Button11.IsVisible = true;
-            Button12.IsVisible = true;
-            Button8.IsVisible = true;
-            Button1.IsVisible = false;
-            Button1.IsVisible = true;
-            Button2.IsVisible = false;
-            Button2.IsVisible = true;
-            Button3.IsVisible = false;
-            Button3.IsVisible = true;
-            Button4.IsVisible = false;
-            Button4.IsVisible = true;
-            Button5.IsVisible = false;
-            Button5.IsVisible = true;
-            Button6.IsVisible = false;
-            Button6.IsVisible = true;
-            Button7.IsVisible = false;
-            Button7.IsVisible = true;
+            if (bClick == false)
+            {
+                Button1.IsVisible = false;
+                Button2.IsVisible = false;
+                Button3.IsVisible = false;
+                Button4.IsVisible = false;
+                Button5.IsVisible = false;
+                Button6.IsVisible = false;
+                Button7.IsVisible = false;
+                Button1a.IsVisible = true;
+                Button2a.IsVisible = true;
+                Button3a.IsVisible = true;
+                Button4a.IsVisible = true;
+                Button5a.IsVisible = true;
+                Button6a.IsVisible = true;
+                Button7a.IsVisible = true;
+                bClick = true;
+            }
+            else
+            {
+                bClick = false;
+                Button1.IsVisible = true;
+                Button2.IsVisible = true;
+                Button3.IsVisible = true;
+                Button4.IsVisible = true;
+                Button5.IsVisible = true;
+                Button6.IsVisible = true;
+                Button7.IsVisible = true;
+                Button1a.IsVisible = false;
+                Button2a.IsVisible = false;
+                Button3a.IsVisible = false;
+                Button4a.IsVisible = false;
+                Button5a.IsVisible = false;
+                Button6a.IsVisible = false;
+                Button7a.IsVisible = false;
+            }
+            
         }
         private void Button1_Clicked(object sender, EventArgs e)
         {
             AllBackGroundsWhite();
             Button1.BackgroundColor = Color.Green;
+            Button1a.BackgroundColor = Color.Green;
             usersList.Add(1);
             Stream fileName = GetStreamFromFile("C4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -75,6 +95,7 @@ namespace HearingTest
         {
             AllBackGroundsWhite();
             Button2.BackgroundColor = Color.Green;
+            Button2a.BackgroundColor = Color.Green;
             usersList.Add(3);
             Stream fileName = GetStreamFromFile("D4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -90,6 +111,7 @@ namespace HearingTest
         {
             AllBackGroundsWhite();
             Button3.BackgroundColor = Color.Green;
+            Button3a.BackgroundColor = Color.Green;
             usersList.Add(5);
             Stream fileName = GetStreamFromFile("E4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -105,6 +127,7 @@ namespace HearingTest
         {
             AllBackGroundsWhite();
             Button4.BackgroundColor = Color.Green;
+            Button4a.BackgroundColor = Color.Green;
             usersList.Add(6);
             Stream fileName = GetStreamFromFile("F4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -120,6 +143,7 @@ namespace HearingTest
         {
             AllBackGroundsWhite();
             Button5.BackgroundColor = Color.Green;
+            Button5a.BackgroundColor = Color.Green;
             usersList.Add(8);
             Stream fileName = GetStreamFromFile("G4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -135,6 +159,7 @@ namespace HearingTest
         {
             AllBackGroundsWhite();
             Button6.BackgroundColor = Color.Green;
+            Button6a.BackgroundColor = Color.Green;
             usersList.Add(10);
             Stream fileName = GetStreamFromFile("A4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -150,6 +175,7 @@ namespace HearingTest
         {
             AllBackGroundsWhite();
             Button7.BackgroundColor = Color.Green;
+            Button7a.BackgroundColor = Color.Green;
             usersList.Add(12);
             Stream fileName = GetStreamFromFile("B4.mp3");
             var audio = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
@@ -229,6 +255,13 @@ namespace HearingTest
             Button5.BackgroundColor = Color.White;
             Button6.BackgroundColor = Color.White;
             Button7.BackgroundColor = Color.White;
+            Button1a.BackgroundColor = Color.White;
+            Button2a.BackgroundColor = Color.White;
+            Button3a.BackgroundColor = Color.White;
+            Button4a.BackgroundColor = Color.White;
+            Button5a.BackgroundColor = Color.White;
+            Button6a.BackgroundColor = Color.White;
+            Button7a.BackgroundColor = Color.White;
             Button8.BackgroundColor = Color.Black;
             Button9.BackgroundColor = Color.Black;
             Button10.BackgroundColor = Color.Black;
